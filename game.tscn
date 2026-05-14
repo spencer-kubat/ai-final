@@ -1,0 +1,491 @@
+[gd_scene load_steps=10 format=3 uid="uid://ol6uqg3jdksk"]
+
+[ext_resource type="Script" uid="uid://co2cdajkskkcy" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://bvadj6k6kg74g" path="res://Untitled-1.png" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://dfsd7waj01v5p" path="res://wheel.gd" id="3_feb5d"]
+[ext_resource type="PackedScene" uid="uid://belbeamtw2uag" path="res://Player.tscn" id="4_7jktm"]
+[ext_resource type="Script" uid="uid://bf13wst42ljdh" path="res://player.gd" id="5_ryrav"]
+[ext_resource type="PackedScene" uid="uid://bexqcs6syj0vb" path="res://HumanPlayer.tscn" id="6_vef74"]
+[ext_resource type="Script" uid="uid://h5a8r473rruc" path="res://human_player.gd" id="7_hve3p"]
+[ext_resource type="PackedScene" uid="uid://b87fynavh612g" path="res://ComputerPlayer.tscn" id="8_mfdv2"]
+[ext_resource type="Script" uid="uid://bmt64or8xo0g5" path="res://computer_player.gd" id="9_iotsf"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_80nbo")
+
+[node name="Wheel" type="Sprite2D" parent="."]
+position = Vector2(993, 150)
+scale = Vector2(0.669444, 0.669444)
+texture = ExtResource("2_e2o6t")
+offset = Vector2(0, 1)
+script = ExtResource("3_feb5d")
+
+[node name="WheelButton" type="Button" parent="."]
+offset_left = 911.0
+offset_top = 316.0
+offset_right = 1077.0
+offset_bottom = 375.0
+theme_override_font_sizes/font_size = 24
+disabled = true
+
+[node name="SpinButton" type="Button" parent="."]
+offset_left = 890.0
+offset_top = 390.0
+offset_right = 990.0
+offset_bottom = 440.0
+theme_override_font_sizes/font_size = 20
+text = "SPIN"
+
+[node name="PassButton" type="Button" parent="."]
+offset_left = 1005.0
+offset_top = 390.0
+offset_right = 1105.0
+offset_bottom = 440.0
+theme_override_font_sizes/font_size = 20
+text = "PASS"
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 1005.0
+offset_top = 560.0
+offset_right = 1105.0
+offset_bottom = 610.0
+theme_override_font_sizes/font_size = 20
+text = "QUIT"
+
+[node name="Phrase" type="GridContainer" parent="."]
+offset_left = 26.0
+offset_top = 37.0
+offset_right = 832.0
+offset_bottom = 161.0
+columns = 15
+
+[node name="Button" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button2" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button3" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button4" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button5" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button6" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button7" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button8" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button9" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button10" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button11" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button12" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button13" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button14" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button15" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button16" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button17" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button18" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button19" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button20" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button21" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button22" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button23" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button24" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button25" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button26" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button27" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button28" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button29" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Button30" type="Button" parent="Phrase"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "*"
+
+[node name="Alphabet" type="GridContainer" parent="."]
+offset_left = 27.0
+offset_top = 220.0
+offset_right = 725.0
+offset_bottom = 344.0
+columns = 13
+
+[node name="Button" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "A"
+
+[node name="Button2" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "B"
+
+[node name="Button3" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "C"
+
+[node name="Button4" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "D"
+
+[node name="Button5" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "E"
+
+[node name="Button6" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "F"
+
+[node name="Button7" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "G"
+
+[node name="Button8" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "H"
+
+[node name="Button9" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "I"
+
+[node name="Button10" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "J"
+
+[node name="Button11" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "K"
+
+[node name="Button12" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "L"
+
+[node name="Button13" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "M"
+
+[node name="Button14" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "N"
+
+[node name="Button15" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "O"
+
+[node name="Button16" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "P"
+
+[node name="Button17" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "Q"
+
+[node name="Button18" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "R"
+
+[node name="Button19" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "S"
+
+[node name="Button20" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "T"
+
+[node name="Button21" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "U"
+
+[node name="Button22" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "V"
+
+[node name="Button23" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "W"
+
+[node name="Button24" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "X"
+
+[node name="Button25" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "Y"
+
+[node name="Button26" type="Button" parent="Alphabet"]
+custom_minimum_size = Vector2(50, 60)
+layout_mode = 2
+disabled = true
+text = "Z"
+
+[node name="Player" parent="." instance=ExtResource("4_7jktm")]
+script = ExtResource("5_ryrav")
+
+[node name="HumanPlayer" parent="Player" instance=ExtResource("6_vef74")]
+script = ExtResource("7_hve3p")
+
+[node name="ComputerPlayer" parent="Player" instance=ExtResource("8_mfdv2")]
+script = ExtResource("9_iotsf")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(891, 185)
+scale = Vector2(0.225565, 0.308024)
+color = Color(0.615686, 0.631373, 0.615686, 1)
+polygon = PackedVector2Array(454.333, 305.32, 382.974, 385.976, 525.692, 385.408)
+
+[node name="Player1NameLabel" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 519.0
+offset_right = 165.0
+offset_bottom = 568.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Player1MoneyLabel" type="Label" parent="Player1NameLabel"]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 127.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Player2NameLabel" type="Label" parent="."]
+offset_left = 248.0
+offset_top = 519.0
+offset_right = 375.0
+offset_bottom = 568.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Player2MoneyLabel" type="Label" parent="Player2NameLabel"]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 127.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Player3NameLabel" type="Label" parent="."]
+offset_left = 458.0
+offset_top = 519.0
+offset_right = 585.0
+offset_bottom = 568.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Player3MoneyLabel" type="Label" parent="Player3NameLabel"]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 127.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Announcer" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 386.0
+offset_right = 190.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 18
+text = "Professor Akram says:"
+
+[node name="Announcement" type="Label" parent="Announcer"]
+layout_mode = 0
+offset_left = 213.0
+offset_right = 805.0
+offset_bottom = 26.0
+theme_override_font_sizes/font_size = 18
+text = "Welcome to Wheel of Sustainability!"
+
+[node name="GuessButton" type="Button" parent="."]
+offset_left = 1005.0
+offset_top = 475.0
+offset_right = 1105.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 20
+text = "GUESS"
+
+[node name="GuessInput" type="LineEdit" parent="GuessButton"]
+layout_mode = 0
+offset_left = -207.0
+offset_right = -7.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 16
