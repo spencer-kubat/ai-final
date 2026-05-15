@@ -2,7 +2,7 @@
 
 A **Wheel of Fortune**-style word game built in **Godot 4.4**, where every puzzle is a sustainability-related term or concept. Play against friends, AI opponents, or both — with computer players that use real search algorithms to decide their moves.
 
-**Live Demo (Web - Chrome):** [https://spencer-kubat.github.io/ai-final/](https://spencer-kubat.github.io/ai-final/)
+**Live Demo (Web):** [https://spencer-kubat.github.io/ai-final/](https://spencer-kubat.github.io/ai-final/)
 
 ---
 
@@ -72,7 +72,7 @@ AI players take their turns automatically — you'll see the announcer narrate t
 
 ### Play in Browser (No Install)
 
-Visit the live demo at [https://spencer-kubat.github.io/ai-final/](https://spencer-kubat.github.io/ai-final/). No installation required — runs in Chrome browser.
+Visit the live demo at [https://spencer-kubat.github.io/ai-final/](https://spencer-kubat.github.io/ai-final/). No installation required — runs in any modern browser with WebAssembly support.
 
 ### Run from Pre-built Binaries
 
