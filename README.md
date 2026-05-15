@@ -1,4 +1,4 @@
-# Wheel of Sustainability 🎡
+# Wheel of Sustainability
 
 A **Wheel of Fortune**-style word game built in **Godot 4.4**, where every puzzle is a sustainability-related term or concept. Play against friends, AI opponents, or both — with computer players that use real search algorithms to decide their moves.
 
